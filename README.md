@@ -15,3 +15,15 @@ Download or clone this repo and copy the tmux-spotify file to a location in your
 set -g status-right $(tmux-spotify both)
 ```
 This will display a ♫, the artist, and the title of the song
+
+![Screenshot of status bar](tmux-spotify.jpg?raw=true "Gnome Terminal Window")
+
+If you do not like the icon or the way it outputs, you can call other params
+
+```
+set -g status-right $(tmux-spotify artist)
+
+or
+
+set -g status-right $(tmux-spotify title)
+```
